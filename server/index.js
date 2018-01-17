@@ -4,7 +4,7 @@ const express = require('express'),
 
 const app = express();
 app.use(bodyParser.json());
-
+app.use( express.static( __dirname + "/../public/build") );
 //Each one of these endpoints reference the controller JS file with the methods 
 // contained there on
 // Best practice is to the path as similar as you can
